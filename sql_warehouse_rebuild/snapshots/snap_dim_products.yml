@@ -1,0 +1,10 @@
+snapshots:
+  - name: snap_dim_products
+    relation: ref('dim_products')
+    config:
+      schema: gold
+      database: sql_replication
+      strategy: timestamp
+      updated_at: start_date
+      unique_key: product_key
+      dbt_valid_to_current: "to_date('9999-12-31')"

@@ -1,0 +1,16 @@
+version : 2
+
+sources:
+  - name: source
+    database: sql_replication 
+    schema: source  
+    tables:
+      - name: cust_az_12
+      - name: cust_info
+      - name: loc_a_101
+      - name: prd_info
+      - name: px_cat_g_1_v_2
+      - name: sales_details
+
+
+ 

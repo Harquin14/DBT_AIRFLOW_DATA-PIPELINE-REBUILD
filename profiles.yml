@@ -1,0 +1,11 @@
+sql_warehouse_rebuild:
+  outputs:
+    dev:
+      catalog: sql_replication
+      host: {{your host}}
+      http_path: {{your path}}
+      schema: source
+      threads: 1
+      token: {{your token}}
+      type: databricks
+  target: dev

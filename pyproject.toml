@@ -1,0 +1,22 @@
+[project]
+name = "dbt-airflow-data-pipeline-rebuild"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "[owusu ansah simon]", email = "skemist0@|gmail" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "databricks>=0.2",
+    "dbt>=2.0.9",
+    "dbt-core>=1.12.6",
+    "dbt-databricks>=1.10.9",
+]
+
+[project.scripts]
+dbt-airflow-data-pipeline-rebuild = "dbt_airflow_data_pipeline_rebuild:main"
+
+[build-system]
+requires = ["uv_build>=0.12.9,<0.13.0"]
+build-backend = "uv_build"
