@@ -19,7 +19,8 @@ its data transformations and analytical model for Databricks SQL and dbt.
 
 ## Architecture
 
-![Uploading rebuild.jpg…]()
+<img width="1302" height="774" alt="rebuild" src="https://github.com/user-attachments/assets/35972694-2997-421f-bb89-c5def152b9cb" />
+
 
 
 The input data is already available in Databricks. This repository focuses on
