@@ -19,15 +19,8 @@ its data transformations and analytical model for Databricks SQL and dbt.
 
 ## Architecture
 
-```mermaid
-flowchart LR
-    A[CRM and ERP CSV data] --> B[Loaded Databricks catalog tables]
-    B --> C[Bronze dbt models]
-    C --> D[Silver dbt models]
-    D --> E[Gold dbt models]
-    E --> F[BI and reporting]
-    E --> G[Ad hoc SQL analysis]
-```
+![Uploading rebuild.jpg…]()
+
 
 The input data is already available in Databricks. This repository focuses on
 the dbt transformations and warehouse models; it does not implement the CSV
