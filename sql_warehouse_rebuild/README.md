@@ -1,15 +1,14 @@
-Welcome to your new dbt project!
+# SQL Warehouse Rebuild
 
-### Using the starter project
+This folder contains the dbt project for the Databricks warehouse rebuild. It
+organizes transformations into Bronze, Silver, and Gold layers, with source
+declarations, SQL models, tests, and snapshots.
 
-Try running the following commands:
-- dbt run
-- dbt test
+For architecture, setup, and command examples, see the repository
+[README](../README.md).
 
+Run dbt commands from the repository root, for example:
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+```powershell
+uv run dbt run --project-dir sql_warehouse_rebuild --profiles-dir .
+```
